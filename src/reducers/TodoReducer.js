@@ -11,6 +11,8 @@ export default function(state = initialState, action){
       return {...state,todos:state.todos.map(todo =>{
         if (todo.id === action.id){
           return{...todo, status: 'completed'}
+        } else {
+          return todo
         }
       })}
     default:

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
+import {deleteTodo, completeTodo} from '../actions/todos'
 
-import {deleteTodo} from '../actions/todos'
-import {completeTodo} from '../actions/todos'
 
 class TodoItem extends Component {
   handleDelete = (e) => {
